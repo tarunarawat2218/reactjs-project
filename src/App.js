@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <h1 className="text-3xl">Let start react</h1>
+  <nav className="flex items-center">Food Cornervghjmk,shjdfmsbnhfwb g</nav>
      
     );
   }  
