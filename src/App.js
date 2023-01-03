@@ -3,7 +3,24 @@ import './App.css';
 
 function App() {
   return (
-  <nav className="flex items-center">Food Cornervghjmk,shjdfmsbnhfwb g</nav>
+  <ul className="flex">
+    <li className="mr-7">
+      <a href="#" className="">Food Corner</a>
+    </li>
+    <li className="mr-7">
+      <a href="#" className="grey">Offers</a>
+    </li>
+    <li className="mr-7">
+      <a href="#" className="grey">Help</a>
+    </li>
+    <li className="mr-7">
+      <a href="#" className="grey">Sign in</a>
+    </li>
+    <li className="mr-7">
+      <a href="#" className="py-10 px-2">Cart</a>
+      
+    </li>
+  </ul>
      
     );
   }  
