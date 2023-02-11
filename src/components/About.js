@@ -2,7 +2,11 @@ import React from 'react'
 
 export default function About(props) {
   return (
-    <div>About</div>
+    <ul class="list-disc list-inside">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
   )
 }
 

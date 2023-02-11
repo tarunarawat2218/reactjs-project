@@ -20,7 +20,7 @@ export default function Textarea(props) {
 const [text, setText] = useState("");
 
   return (
-    <div class="px-10 py-5">
+    <div class="px-10 py-5 ">
     <label for="message"  class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">{props.heading}</label>
     <textarea id="message" rows="4" value = {text} onChange ={handleOnChange} class="block p-5 w-11/12 text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder='Write your thoughts here...'></textarea>
     <div class= " px-4 py-4">
