@@ -20,7 +20,7 @@ function App() {
   return (
     <>
   <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
-  <Alert></Alert>
+  <Alert/>
   <Textarea heading ="Your message" />
   {/* <About /> */}
   
