@@ -30,7 +30,7 @@ function App() {
     <>
   <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
   <Alert alert = {alert}/>
-  <Textarea showAlert = {showAlert} heading ="Your message" />
+  <Textarea showAlert = {showAlert}  heading ="Your message" />
   {/* <About /> */}
   
   

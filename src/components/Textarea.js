@@ -7,10 +7,7 @@ export default function Textarea(props) {
     props.showAlert("You posted", "bg-pink-500")
   };
 
-  const handleChangeWriting = () => {
-   setactive(!text)
-  };
-
+  
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
@@ -18,10 +15,10 @@ export default function Textarea(props) {
   const handleUpperCase = () =>{
     let newText = text.toUpperCase();
     setText(newText)
+    props.showAlert("Apply Uppercase", "bg-yellow-400")
   }
 
   const [text, setText] = useState("");
-  const [active, setactive] = useState("false");
 
   return (
     <div class="px-10 py-5 ">
@@ -36,7 +33,7 @@ export default function Textarea(props) {
         rows="4"
         value={text}
         onChange={handleOnChange}
-        class="block p-5 w-11/12 text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+        class={`block p-5 w-11/12 text-base text-gray-800 bg-gray-50 rounded-lg border border-gray-300  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white `}
         placeholder="Write your thoughts here..."
       ></textarea>
       <div class=" px-4 py-4">
@@ -46,14 +43,9 @@ export default function Textarea(props) {
         >
           Post Comment
         </button>
+        
         <button
-          class=" mx-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-          onClick={handleChangeWriting} style = {{color : active ? 'text-red-400' : 'text-orange-400'}}
-        >
-          Change writing
-        </button>
-        <button
-          class=" mx-0 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          class=" mx-3 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           onClick={handleUpperCase}
         >
           Change to Uppercase
