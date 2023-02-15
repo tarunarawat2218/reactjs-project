@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textarea from './components/Textarea';
+import About from './components/About';
 import {useState } from 'react';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       msg:message,
       type : type
     })
+    setTimeout(() => {
+      setAlert(null)
+    }, 2000);
   }
 
   const toggleMode = () =>{
