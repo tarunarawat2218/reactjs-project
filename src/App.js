@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textarea from './components/Textarea';
 import About from './components/About';
 import {useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  
+} from "react-router-dom";
 
 function App() {
   const [mode , setMode] = useState('bg-slate-50')
@@ -32,10 +37,15 @@ function App() {
   }
   return (
     <>
+    <Router>
   <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
   <Alert alert = {alert}/>
-  <Textarea showAlert = {showAlert}  heading ="Your message" />
-  {/* <About /> */}
+  <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/>
+        </Routes>
+  </Router>
+  {/* <Textarea showAlert = {showAlert}  heading ="Your message" /> */}
   
   
 </>

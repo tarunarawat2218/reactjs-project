@@ -1,6 +1,7 @@
 //rfc(react function component)
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -13,24 +14,24 @@ export default function Navbar(props) {
 
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-lg lg:flex-grow">
-          <a
-            href="#responsive-header"
+          <Link
+            to="/"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
-            Docs
-          </a>
-          <a
-            href="#responsive-header"
+            Home
+          </Link>
+          <Link
+            to="#responsive-header"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
             Examples
-          </a>
-          <a
-            href="/About"
+          </Link>
+          <Link
+            to="/About"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
           >
             About
-          </a>
+          </Link>
         </div>
         <div py-3>
           <label
