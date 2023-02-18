@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textarea from './components/Textarea';
 import About from './components/About';
+import Firstpage from './components/Firstpage';
 import {useState } from 'react';
 import {
   BrowserRouter as Router,
@@ -38,11 +39,12 @@ function App() {
   return (
     <>
     <Router>
+    <Route path="/" element={<Firstpage />} />
   <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
   <Alert alert = {alert}/>
   <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/>
+          {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
         </Routes>
   </Router>
   {/* <Textarea showAlert = {showAlert}  heading ="Your message" /> */}
