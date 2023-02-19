@@ -39,12 +39,13 @@ function App() {
   return (
     <>
     <Router>
-    <Route path="/" element={<Firstpage />} />
+
   <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
+  <Firstpage></Firstpage>
   <Alert alert = {alert}/>
   <Routes>
           <Route path="/about" element={<About />} />
-          {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
+           <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/>
         </Routes>
   </Router>
   {/* <Textarea showAlert = {showAlert}  heading ="Your message" /> */}
