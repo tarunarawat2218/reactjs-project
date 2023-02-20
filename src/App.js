@@ -4,6 +4,7 @@ import Alert from './components/Alert';
 import Textarea from './components/Textarea';
 import About from './components/About';
 import Firstpage from './components/Firstpage';
+import Posts from './components/Posts';
 import {useState } from 'react';
 import {
   BrowserRouter as Router,
@@ -12,40 +13,41 @@ import {
   
 } from "react-router-dom";
 
-function App() {
-  const [mode , setMode] = useState('bg-slate-50')
-  const [alert , setAlert] = useState(null)
+ function App() {
+//   const [mode , setMode] = useState('bg-slate-50')
+//   const [alert , setAlert] = useState(null)
 
-  const showAlert = (message,type) => {
-    setAlert({
-      msg:message,
-      type : type
-    })
-    setTimeout(() => {
-      setAlert(null)
-    }, 2000);
-  }
+//   const showAlert = (message,type) => {
+//     setAlert({
+//       msg:message,
+//       type : type
+//     })
+//     setTimeout(() => {
+//       setAlert(null)
+//     }, 2000);
+//   }
 
-  const toggleMode = () =>{
-    if(mode === 'bg-slate-50'){
-      setMode( "bg-stone-900")
-      showAlert("Dark mode" , "bg-red-700")
+//   const toggleMode = () =>{
+//     if(mode === 'bg-slate-50'){
+//       setMode( "bg-stone-900")
+//       showAlert("Dark mode" , "bg-red-700")
       
-    }else{
-      setMode("bg-slate-50")
-      showAlert("light mode" , "bg-blue-200")
-    }
-  }
+//     }else{
+//       setMode("bg-slate-50")
+//       showAlert("light mode" , "bg-blue-200")
+//     }
+//   }
   return (
     <>
     <Router>
 
-  <Navbar title = "Blog Page" mode = {mode} toggleMode = {toggleMode}/>
+  <Navbar/>
   <Firstpage></Firstpage>
-  <Alert alert = {alert}/>
+  <Posts></Posts>
+  
   <Routes>
           <Route path="/about" element={<About />} />
-           <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/>
+           {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
         </Routes>
   </Router>
   {/* <Textarea showAlert = {showAlert}  heading ="Your message" /> */}
@@ -53,8 +55,8 @@ function App() {
   
 </>
     );
-  } 
-   
+  
+  }
   export default App;
 
   // proptype and prop default
