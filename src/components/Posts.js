@@ -70,7 +70,7 @@ export default function Posts() {
         <p class="text-gray-600">Aug 18</p>
       </div>
 </div>
-  </div> 
+  </div>   
   </div>
   </>
   )

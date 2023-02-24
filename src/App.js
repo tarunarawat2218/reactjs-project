@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textarea from './components/Textarea';
 import About from './components/About';
+import Add from './components/Add';
+import Edit from './components/Edit';
 import Firstpage from './components/Firstpage';
 import Posts from './components/Posts';
 import {useState } from 'react';
@@ -42,9 +44,11 @@ import {
     <Router>
 
   <Navbar/>
-  <Firstpage></Firstpage>
+  {/* <Firstpage></Firstpage>
   <Posts></Posts>
-  
+  <Edit/> */}
+
+  <Add/>
   <Routes>
           <Route path="/about" element={<About />} />
            {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
