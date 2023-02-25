@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Textarea from './components/Textarea';
 import About from './components/About';
-import Add from './components/Add';
+import Form from './components/Form';
 import Edit from './components/Edit';
 import Firstpage from './components/Firstpage';
 import Posts from './components/Posts';
@@ -48,7 +48,7 @@ import {
   <Posts></Posts>
   <Edit/> */}
 
-  <Add/>
+  <Form/>
   <Routes>
           <Route path="/about" element={<About />} />
            {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
