@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Alert from './components/Alert';
+import Login from './components/Login';
 import Textarea from './components/Textarea';
 import About from './components/About';
 import Form from './components/Form';
@@ -48,7 +48,7 @@ import {
   <Posts></Posts>
   <Edit/> */}
 
-  <Form/>
+  <Login/>
   <Routes>
           <Route path="/about" element={<About />} />
            {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
