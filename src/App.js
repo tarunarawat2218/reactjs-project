@@ -44,17 +44,20 @@ import {
     <Router>
 
   <Navbar/>
-  {/* <Firstpage></Firstpage>
-  <Posts></Posts>
-  <Edit/> */}
-
-  <Login/>
+  <Routes>
+          <Route path="/" element={<Firstpage />} />
+           
+        </Routes>
+        <Posts/>
+        <Routes>
+        <Route path="/Edit" element={<Edit/>} />
+        </Routes>  
   <Routes>
           <Route path="/about" element={<About />} />
-           {/* <Route path="/" element={<Textarea/>}  showAlert = {showAlert}  heading ="Your message"/> */}
+           
         </Routes>
   </Router>
-  {/* <Textarea showAlert = {showAlert}  heading ="Your message" /> */}
+  
   
   
 </>
