@@ -48,7 +48,7 @@ import {
           <Route path="/" element={<Firstpage />} />
            
         </Routes>
-        <Posts/>
+        
         <Routes>
         <Route path="/Edit" element={<Edit/>} />
         </Routes>  
@@ -56,10 +56,11 @@ import {
           <Route path="/about" element={<About />} />
            
         </Routes>
+        <Routes>
+          <Route path="/textarea" element={<Textarea />} />
+           
+        </Routes>
   </Router>
-  
-  
-  
 </>
     );
   

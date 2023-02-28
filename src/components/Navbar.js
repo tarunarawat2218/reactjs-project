@@ -21,16 +21,22 @@ export default function Navbar(props) {
             Home
           </Link>
           <Link
-            to="/textarea"
+            to="/Posts"
             class="block mt-4 lg:inline-block lg:mt-0 text-stone-800 hover:text-white mr-4"
           >
-            Examples
+            Post
           </Link>
           <Link
             to="/About"
-            class="block mt-4 lg:inline-block lg:mt-0 text-stone-800 hover:text-white"
+            class="block mt-4 lg:inline-block lg:mt-0 text-stone-800 hover:text-white mr-4"
           >
             About
+          </Link>
+          <Link
+            to="/Textarea"
+            class="block mt-4 lg:inline-block lg:mt-0 text-stone-800 hover:text-white"
+          >
+            Write
           </Link>
         </div>
         
