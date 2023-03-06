@@ -27,6 +27,5 @@ export default function About(props) {
 </div>
 </div>
 
-
-  );
+);
 }
